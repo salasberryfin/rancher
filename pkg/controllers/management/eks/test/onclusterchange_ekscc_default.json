@@ -33,6 +33,7 @@
     ],
     "privateAccess": false,
     "publicAccess": true,
+    "ebsCSIDriver": true,
     "publicAccessSources": [],
     "region": "us-east-2",
     "secretsEncryption": false,
