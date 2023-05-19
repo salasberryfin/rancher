@@ -2,7 +2,11 @@ module github.com/rancher/rancher/pkg/apis
 
 go 1.19
 
-replace k8s.io/client-go => github.com/rancher/client-go v1.25.4-rancher1
+replace (
+	// own version of eks-operator
+	github.com/rancher/eks-operator v1.2.1-rc3 => github.com/salasberryfin/eks-operator v0.0.1-csalas
+	k8s.io/client-go => github.com/rancher/client-go v1.25.4-rancher1
+)
 
 require (
 	github.com/rancher/aks-operator v1.1.1-rc2
@@ -13,8 +17,8 @@ require (
 	github.com/rancher/rke v1.4.6-rc3
 	github.com/rancher/wrangler v1.1.1
 	github.com/sirupsen/logrus v1.9.0
-	k8s.io/api v0.25.4
-	k8s.io/apimachinery v0.25.4
+	k8s.io/api v0.26.4
+	k8s.io/apimachinery v0.26.4
 	sigs.k8s.io/cluster-api v1.2.12
 )
 
@@ -25,9 +29,9 @@ require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.10.1 // indirect
 	github.com/evanphx/json-patch v4.12.0+incompatible // indirect
-	github.com/fsnotify/fsnotify v1.5.4 // indirect
+	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/ghodss/yaml v1.0.0 // indirect
-	github.com/go-logr/logr v1.2.3 // indirect
+	github.com/go-logr/logr v1.2.4 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
 	github.com/go-openapi/jsonreference v0.20.1 // indirect
 	github.com/go-openapi/swag v0.22.3 // indirect
@@ -65,10 +69,10 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/apiextensions-apiserver v0.25.4 // indirect
-	k8s.io/apiserver v0.25.4 // indirect
+	k8s.io/apiextensions-apiserver v0.26.4 // indirect
+	k8s.io/apiserver v0.26.4 // indirect
 	k8s.io/client-go v12.0.0+incompatible // indirect
-	k8s.io/component-base v0.25.4 // indirect
+	k8s.io/component-base v0.26.4 // indirect
 	k8s.io/klog/v2 v2.90.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20230308215209-15aac26d736a // indirect
 	k8s.io/kubernetes v1.13.0 // indirect
