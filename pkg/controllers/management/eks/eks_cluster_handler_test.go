@@ -1,12 +1,13 @@
 package eks
 
 import (
-	"github.com/rancher/rancher/pkg/capr"
 	"reflect"
 	"testing"
 
+	"github.com/rancher/rancher/pkg/capr"
+
 	"github.com/Azure/go-autorest/autorest/to"
-	"github.com/rancher/rancher/pkg/apis/management.cattle.io/v3"
+	v3 "github.com/rancher/rancher/pkg/apis/management.cattle.io/v3"
 )
 
 const (

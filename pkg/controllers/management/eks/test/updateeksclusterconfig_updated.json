@@ -39,6 +39,7 @@
     ],
     "privateAccess": false,
     "publicAccess": true,
+    "ebsCSIDriver": true,
     "publicAccessSources": [
       "0.0.0.0/0"
     ],
