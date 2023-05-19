@@ -10,6 +10,8 @@ replace (
 	github.com/matryer/moq => github.com/rancher/moq v0.0.0-20200712062324-13d1f37d2d77
 
 	github.com/opencontainers/runc => github.com/opencontainers/runc v1.1.2
+	// own version of eks-operator
+	github.com/rancher/eks-operator v1.2.1-rc3 => github.com/salasberryfin/eks-operator v0.0.1-csalas
 	github.com/rancher/rancher/pkg/apis => ./pkg/apis
 	github.com/rancher/rancher/pkg/client => ./pkg/client
 
@@ -141,10 +143,10 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 	gopkg.in/yaml.v2 v2.4.0
 	helm.sh/helm/v3 v3.9.0
-	k8s.io/api v0.25.4
-	k8s.io/apiextensions-apiserver v0.25.4
-	k8s.io/apimachinery v0.25.4
-	k8s.io/apiserver v0.25.4
+	k8s.io/api v0.26.4
+	k8s.io/apiextensions-apiserver v0.26.4
+	k8s.io/apimachinery v0.26.4
+	k8s.io/apiserver v0.26.4
 	k8s.io/cli-runtime v0.25.4
 	k8s.io/client-go v12.0.0+incompatible
 	k8s.io/gengo v0.0.0-20220902162205-c0856e24416d
@@ -208,7 +210,7 @@ require (
 	github.com/fatih/camelcase v1.0.0 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/felixge/httpsnoop v1.0.1 // indirect
-	github.com/fsnotify/fsnotify v1.5.4 // indirect
+	github.com/fsnotify/fsnotify v1.6.0 // indirect
 	github.com/fvbommel/sortorder v1.0.1 // indirect
 	github.com/go-asn1-ber/asn1-ber v1.5.3 // indirect
 	github.com/go-errors/errors v1.0.1 // indirect
@@ -341,7 +343,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	k8s.io/cluster-bootstrap v0.24.0 // indirect
 	k8s.io/code-generator v0.27.1 // indirect
-	k8s.io/component-base v0.25.4 // indirect
+	k8s.io/component-base v0.26.4 // indirect
 	k8s.io/component-helpers v0.25.4 // indirect
 	k8s.io/klog v1.0.0 // indirect
 	k8s.io/klog/v2 v2.90.1 // indirect
