@@ -10,6 +10,7 @@ replace (
 	github.com/matryer/moq => github.com/rancher/moq v0.0.0-20200712062324-13d1f37d2d77
 
 	github.com/opencontainers/runc => github.com/opencontainers/runc v1.1.2
+	github.com/rancher/eks-operator v1.2.1-rc3 => github.com/salasberryfin/eks-operator v0.0.0-csalas
 	github.com/rancher/rancher/pkg/apis => ./pkg/apis
 	github.com/rancher/rancher/pkg/client => ./pkg/client
 
@@ -61,7 +62,7 @@ require (
 	github.com/AzureAD/microsoft-authentication-library-for-go v0.5.1
 	github.com/Masterminds/semver/v3 v3.2.0
 	github.com/Masterminds/sprig/v3 v3.2.3
-	github.com/aws/aws-sdk-go v1.44.253
+	github.com/aws/aws-sdk-go v1.44.266
 	github.com/bep/debounce v1.2.0
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/coreos/go-iptables v0.6.0
@@ -77,7 +78,7 @@ require (
 	github.com/evanphx/json-patch v4.12.0+incompatible
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-ldap/ldap/v3 v3.4.1
-	github.com/go-logr/logr v1.2.3
+	github.com/go-logr/logr v1.2.4
 	github.com/golang-jwt/jwt v3.2.1+incompatible
 	github.com/golang/mock v1.6.0
 	github.com/golang/protobuf v1.5.3
@@ -129,12 +130,12 @@ require (
 	github.com/vishvananda/netlink v1.1.1-0.20210330154013-f5de75959ad5
 	github.com/vmware/govmomi v0.30.4
 	golang.org/x/crypto v0.6.0
-	golang.org/x/mod v0.9.0
-	golang.org/x/net v0.9.0
+	golang.org/x/mod v0.10.0
+	golang.org/x/net v0.10.0
 	golang.org/x/oauth2 v0.0.0-20220628200809-02e64fa58f26
-	golang.org/x/sync v0.1.0
+	golang.org/x/sync v0.2.0
 	golang.org/x/text v0.9.0 // indirect
-	golang.org/x/tools v0.7.0 // indirect
+	golang.org/x/tools v0.9.1 // indirect
 	google.golang.org/api v0.81.0
 	google.golang.org/grpc v1.48.0
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c
@@ -328,8 +329,8 @@ require (
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.24.0 // indirect
-	golang.org/x/sys v0.7.0 // indirect
-	golang.org/x/term v0.7.0 // indirect
+	golang.org/x/sys v0.8.0 // indirect
+	golang.org/x/term v0.8.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	gomodules.xyz/jsonpatch/v2 v2.2.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
