@@ -243,6 +243,7 @@ status:
         version: "1.22"
       privateAccess: false
       publicAccess: true
+      ebsCSIDriver: true
       publicAccessSources:
       - 0.0.0.0/0
       region: us-east-2

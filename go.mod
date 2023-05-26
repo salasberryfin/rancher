@@ -11,7 +11,7 @@ replace (
 
 	github.com/opencontainers/runc => github.com/opencontainers/runc v1.1.2
 	// own version of eks-operator
-	github.com/rancher/eks-operator v1.2.1-rc3 => github.com/salasberryfin/eks-operator v0.0.1-csalas
+	github.com/rancher/eks-operator v1.2.1-rc3 => github.com/salasberryfin/eks-operator v0.0.5-csalas
 	github.com/rancher/rancher/pkg/apis => ./pkg/apis
 	github.com/rancher/rancher/pkg/client => ./pkg/client
 
