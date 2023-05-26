@@ -613,8 +613,6 @@ github.com/rancher/aks-operator v1.1.1-rc2 h1:c7Ca+dW1+Kp+EVYcyrqa6gWmb0FMQzKnlK
 github.com/rancher/aks-operator v1.1.1-rc2/go.mod h1:vH7uVTYNZjAC7wJ6oYnefwwoQJxCPwAznvmH1d+Nll8=
 github.com/rancher/client-go v1.25.4-rancher1 h1:9MlBC8QbgngUkhNzMR8rZmmCIj6WNRHFOnYiwC2Kty4=
 github.com/rancher/client-go v1.25.4-rancher1/go.mod h1:8trHCAC83XKY0wsBIpbirZU4NTUpbuhc2JnI7OruGZw=
-github.com/rancher/eks-operator v1.2.1 h1:AwkDVnK7X2lnlo/VzC+ve7xTotY9thQhTbzICuEvFqQ=
-github.com/rancher/eks-operator v1.2.1/go.mod h1:e8Tqz6q5B1LWDudAYsMoziiZmUQfCIIfToWKQTJrIyE=
 github.com/rancher/fleet/pkg/apis v0.0.0-20230516111835-f52a0e7d38af h1:Of1S2MvLJc1OICnQHx3v6KVsqnw5m/ubV+F4sqrscB0=
 github.com/rancher/fleet/pkg/apis v0.0.0-20230516111835-f52a0e7d38af/go.mod h1:TbpjMODeuFUJlHG8IfehZ4FBzgzpxwPwa+GwtFq2Tq0=
 github.com/rancher/gke-operator v1.1.5 h1:XHNrM67enwDkqYG5C4s1HVgfJGmfwtVYGfl9TgXT6zA=
@@ -639,8 +637,8 @@ github.com/rogpeppe/go-internal v1.3.0/go.mod h1:M8bDsm7K2OlrFYOpmOWEs/qY81heoFR
 github.com/russross/blackfriday v1.5.2/go.mod h1:JO/DiYxRf+HjHt06OyowR9PTA263kcR/rfWxYHBV53g=
 github.com/russross/blackfriday/v2 v2.0.1/go.mod h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=
 github.com/ryanuber/columnize v0.0.0-20160712163229-9b3edd62028f/go.mod h1:sm1tb6uqfes/u+d4ooFouqFdy9/2g9QGwK3SQygK0Ts=
-github.com/salasberryfin/eks-operator v0.0.1-csalas h1:NYFYNzG/pxNldEtaFtAzatD08gnvxVVzpn4uSNh3cik=
-github.com/salasberryfin/eks-operator v0.0.1-csalas/go.mod h1:02lAm1CmD3qPY6kYW1zxmlpW+5nc8XxPWZ295uGmfxM=
+github.com/salasberryfin/eks-operator v0.0.5-csalas h1:BvTOMBqBLRIKi6mP+pn6vhV7w36tZh5VAhH+C+4bwXk=
+github.com/salasberryfin/eks-operator v0.0.5-csalas/go.mod h1:e8Tqz6q5B1LWDudAYsMoziiZmUQfCIIfToWKQTJrIyE=
 github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529/go.mod h1:DxrIzT+xaE7yg65j358z/aeFdxmN0P9QXhEzd20vsDc=
 github.com/sergi/go-diff v1.0.0/go.mod h1:0CfEIISq7TuYL3j771MWULgwwjU+GofnZX9QAmXWZgo=
 github.com/sergi/go-diff v1.1.0/go.mod h1:STckp+ISIX8hZLjrqAeVduY0gWCT9IjLuqbuNXdaHfM=
@@ -1012,6 +1010,7 @@ golang.org/x/sys v0.0.0-20220422013727-9388b58f7150/go.mod h1:oPkhp1MJrh7nUepCBc
 golang.org/x/sys v0.0.0-20220520151302-bc2c85ada10a/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.0.0-20220908164124-27713097b956/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/sys v0.8.0 h1:EBmGv8NaZBZTWvrbjNoL6HVt+IVy3QDQpJs7VRIw3tU=
 golang.org/x/sys v0.8.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201117132131-f5c789dd3221/go.mod h1:Nr5EML6q2oocZ2LXRh80K7BxOlk5/8JxuGnuhpl+muw=

@@ -4,7 +4,7 @@ go 1.19
 
 replace (
 	// own version of eks-operator
-	github.com/rancher/eks-operator v1.2.1-rc3 => github.com/salasberryfin/eks-operator v0.0.1-csalas
+	github.com/rancher/eks-operator v1.2.1 => github.com/salasberryfin/eks-operator v0.0.5-csalas
 	k8s.io/client-go => github.com/rancher/client-go v1.25.4-rancher1
 )
 
@@ -17,8 +17,8 @@ require (
 	github.com/rancher/rke v1.4.6-rc3
 	github.com/rancher/wrangler v1.1.1
 	github.com/sirupsen/logrus v1.9.2
-	k8s.io/api v0.25.4
-	k8s.io/apimachinery v0.25.4
+	k8s.io/api v0.26.4
+	k8s.io/apimachinery v0.26.4
 	sigs.k8s.io/cluster-api v1.2.12
 )
 
