@@ -24,6 +24,7 @@ const (
 )
 
 type NodeGroup struct {
+	AmiType              *string           `json:"amiType,omitempty" yaml:"amiType,omitempty"`
 	DesiredSize          *int64            `json:"desiredSize,omitempty" yaml:"desiredSize,omitempty"`
 	DiskSize             *int64            `json:"diskSize,omitempty" yaml:"diskSize,omitempty"`
 	Ec2SshKey            *string           `json:"ec2SshKey,omitempty" yaml:"ec2SshKey,omitempty"`
