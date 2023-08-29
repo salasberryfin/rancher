@@ -5,7 +5,10 @@ go 1.19
 // wrangler bracnhes need to be updated before replace can be removed
 replace github.com/rancher/wrangler v1.1.1 => github.com/rancher/wrangler v1.1.1-0.20230629203936-0e36fee7aea5
 
-replace k8s.io/client-go => github.com/rancher/client-go v1.25.4-rancher1
+replace (
+	github.com/rancher/eks-operator v1.2.2-rc3 => github.com/salasberryfin/eks-operator v1.2.2-salasberryfin2
+	k8s.io/client-go => github.com/rancher/client-go v1.25.4-rancher1
+)
 
 require (
 	github.com/rancher/aks-operator v1.1.3-rc1
@@ -57,11 +60,11 @@ require (
 	github.com/prometheus/procfs v0.8.0 // indirect
 	github.com/rancher/lasso v0.0.0-20230629200414-8a54b32e6792 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	golang.org/x/net v0.12.0 // indirect
+	golang.org/x/net v0.14.0 // indirect
 	golang.org/x/oauth2 v0.10.0 // indirect
-	golang.org/x/sys v0.10.0 // indirect
-	golang.org/x/term v0.10.0 // indirect
-	golang.org/x/text v0.11.0 // indirect
+	golang.org/x/sys v0.11.0 // indirect
+	golang.org/x/term v0.11.0 // indirect
+	golang.org/x/text v0.12.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	gomodules.xyz/jsonpatch/v2 v2.2.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
