@@ -191,11 +191,20 @@ func (e *eksOperatorController) onClusterChange(key string, cluster *mgmtv3.Clus
 		// agent to be deployed without one, but having a managed nodegroup makes it easy
 		// for rancher to validate its ability to do so.
 		addNgMessage := "Cluster must have at least one managed nodegroup."
+		logrus.Info("node groups on spec: ", cluster.Spec.EKSConfig.NodeGroups)
+		logrus.Info("number of node groups on spec: ", len(cluster.Spec.EKSConfig.NodeGroups))
 		noNodeGroupsOnSpec := len(cluster.Spec.EKSConfig.NodeGroups) == 0
+		logrus.Info("node groups on upstream spec: ", cluster.Status.EKSStatus.UpstreamSpec.NodeGroups)
+		logrus.Info("number of node groups on upstream spec: ", len(cluster.Status.EKSStatus.UpstreamSpec.NodeGroups))
 		noNodeGroupsOnUpstreamSpec := len(cluster.Status.EKSStatus.UpstreamSpec.NodeGroups) == 0
 		if (cluster.Spec.EKSConfig.NodeGroups != nil && noNodeGroupsOnSpec) || (cluster.Spec.EKSConfig.NodeGroups == nil && noNodeGroupsOnUpstreamSpec) {
-			cluster, err = e.SetFalse(cluster, apimgmtv3.ClusterConditionWaiting, addNgMessage)
+			//cluster, err = e.SetFalse(cluster, apimgmtv3.ClusterConditionWaiting, addNgMessage)
+			cluster = cluster.DeepCopy()
+			apimgmtv3.ClusterConditionWaiting.Message(cluster, "cluster needs more managed node groups")
+			cluster, err = e.ClusterClient.Update(cluster)
+			logrus.Info("1. cluster condition waiting: ", apimgmtv3.ClusterConditionWaiting.GetMessage(cluster))
 			if err != nil {
+				logrus.Info("1. error setting cluster condition waiting: ", err)
 				return cluster, err
 			}
 		} else {
@@ -203,7 +212,9 @@ func (e *eksOperatorController) onClusterChange(key string, cluster *mgmtv3.Clus
 				cluster = cluster.DeepCopy()
 				apimgmtv3.ClusterConditionWaiting.Message(cluster, "Waiting for API to be available")
 				cluster, err = e.ClusterClient.Update(cluster)
+				logrus.Info("2. cluster condition waiting: ", apimgmtv3.ClusterConditionWaiting.GetMessage(cluster))
 				if err != nil {
+					logrus.Info("2. error setting cluster condition waiting: ", err)
 					return cluster, err
 				}
 			}
