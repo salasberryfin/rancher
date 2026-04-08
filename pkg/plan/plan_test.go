@@ -209,18 +209,21 @@ func TestParse(t *testing.T) {
 func TestChecksum(t *testing.T) {
 	input := []byte(`{"files":[]}`)
 
+	sum1 := Checksum(input)
+	sum2 := Checksum(input)
+
 	// same input → same output, always
-	if Checksum(input) != Checksum(input) {
-		t.Error("checksum is not deterministic")
+	if sum1 != sum2 {
+		t.Errorf("checksum is not deterministic: %q != %q", sum1, sum2)
 	}
 
 	// SHA-256 hex digest is 64 characters
-	if got := len(Checksum(input)); got != 64 {
-		t.Errorf("expected 64-char hex digest, got %d", got)
+	if len(sum1) != 64 {
+		t.Errorf("expected 64-char hex digest, got %d", len(sum1))
 	}
 
 	// different input → different output
-	if Checksum(input) == Checksum([]byte(`{"files":[],"instructions":[]}`)) {
+	if sum1 == Checksum([]byte(`{"files":[],"instructions":[]}`)) {
 		t.Error("different inputs produced the same checksum")
 	}
 }
